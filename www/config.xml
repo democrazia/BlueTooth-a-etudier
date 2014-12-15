@@ -50,10 +50,6 @@
 	<gap:plugin name="com.megster.cordova.bluetoothserial" version="0.2.2" />
 	<gap:plugin name="org.apache.cordova.device" version="0.2.8" />
     <access origin="http://127.0.0.1*" />
-   
-  <config-file target="AndroidManifest.xml" parent="/manifest">
-  	<uses-permission android:name="android.permission.BLUETOOTH"/>
-  	<uses-permission android:name="android.permission.BLUETOOTH_ADMIN" />
-  </config-file>  
+
     
 </widget>
