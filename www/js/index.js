@@ -1,6 +1,14 @@
-document.addEventListener("deviceready", onDeviceReady, false);
 BluetoothAdapter bluetoothAdapter = BluetoothAdapter.getDefaultAdapter();
+if (bluetoothAdapter == null)
+   Toast.makeText(TutoBluetoothActivity.this, "Pas de Bluetooth", 
+                  Toast.LENGTH_SHORT).show();
+else
+   Toast.makeText(TutoBluetoothActivity.this, "Avec Bluetooth", 
+                  Toast.LENGTH_SHORT).show();
 
+
+
+document.addEventListener("deviceready", onDeviceReady, false);
 var mac = "";
 function onDeviceReady(){	//Phonegap ready
 	alert(device.platform);
