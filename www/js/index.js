@@ -1,4 +1,6 @@
 document.addEventListener("deviceready", onDeviceReady, false);
+BluetoothAdapter bluetoothAdapter = BluetoothAdapter.getDefaultAdapter();
+
 var mac = "";
 function onDeviceReady(){	//Phonegap ready
 	alert(device.platform);
