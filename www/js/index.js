@@ -24,6 +24,10 @@ function connect(mac){
 		},
 		function(){
 			alert("Bluetooth must be enabled first!");
+			if (!bluetoothAdapter.isEnabled()) {
+   				bluetoothAdapter.enable();
+				}
+			
 		}
 	);
 	
