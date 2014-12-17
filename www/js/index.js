@@ -1,6 +1,7 @@
 document.addEventListener("deviceready", onDeviceReady, false);
 var mac = "";
 function onDeviceReady(){	//Phonegap ready
+        alert("index.js 1")
 	window.bluetooth = cordova.require("js/bluetooth");
 	alert(device.platform);
 	if(device.platform == "Android") mac = "20:13:06:14:01:72";
